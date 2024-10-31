@@ -1,0 +1,28 @@
+.rcno-book-listing-item {
+    position: relative;
+    width: 100%;
+    margin: 0 0 2em 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.rcno-book-listing-cover {
+    flex: 1 1 20%;
+    min-width: 128px;
+    margin: 0 15px 0 0;
+}
+
+.rcno-book-listing-description {
+    flex: 0 1 75%;
+}
+
+.rcno-book-listing-description .rcno-book-description {
+    font-size: .9em;
+    line-height: 1.2;
+    margin: 10px 0;
+}
+
+.rcno-book-listing-more {
+    padding: 3px 7px;
+    border: 1px solid;
+}

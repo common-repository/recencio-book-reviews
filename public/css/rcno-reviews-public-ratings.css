@@ -1,0 +1,72 @@
+.rating {
+    overflow: hidden;
+    margin: 11px 0 -6px 0 !important;
+    display: inline-block;
+    background: #fff;
+    /* line-height: 1; */
+}
+
+.rating li {
+    float: left;
+    /* margin: 0 2px 2px 0; */
+    width: 23px;
+    height: 22px;
+    cursor: pointer;
+    overflow: hidden;
+    list-style: none !important;
+}
+
+.rating .l {
+    float: left;
+    height: 22px;
+    width: 12px;
+    background: #ccc url(star.png) 0 0
+}
+
+.rating .r {
+    float: right;
+    height: 22px;
+    width: 11px;
+    background: #ccc url(star.png) -12px 0;
+}
+
+.rpr_description .ratings {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-48%);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+}
+
+.gp-homepage-1 .ratings,
+.gp-homepage.left .ratings,
+.gp-homepage.right .ratings {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translateX(-47%);
+    box-shadow: 0 0 1px -1px rgba(0, 0, 0, 0.10);
+}
+
+.rpr_description .ratings ul {
+    padding: 5px;
+}
+
+.rating-container {
+    width: 100%;
+    position: relative;
+}
+
+p.rating-label {
+    margin: 0 10px 0 0;
+    line-height: 1;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+}
+
+.woocommerce .rating-container { /* This maybe necessary */
+    display: none !important;
+}

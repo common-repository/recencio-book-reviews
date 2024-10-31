@@ -1,0 +1,394 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #b7b7b7;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #b7b7b7;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #b7b7b7;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #b7b7b7;
+}
+
+.toplevel_page_rcno-reviews .wrap > h2:first-child {
+    background-image: url('../images/logo-30-color.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20px;
+    padding: 0 0 0 1.2em;
+    margin: 1em 0;
+}
+
+.toplevel_page_rcno-reviews .wrap h2:before {
+    /*content: url('../images/logo-20.png');
+    margin: 0 1em 0 0;*/
+}
+
+.post-type-rcno_review .form-table th {
+    padding: 15px 10px 15px 0;
+}
+
+#dashboard_right_now li a.rcno_review-count:before,
+#dashboard_right_now span.rcno_review-count:before {
+    content: url('../images/logo-20.png');
+}
+
+.menu-icon-rcno_review a .wp-menu-image.svg {
+    background-size: 14px auto !important;
+}
+
+button.button.reset-button {
+    background: red;
+    color: #fff;
+}
+
+.rcno-ajax-loading {
+    background: url(../images/spinner.gif) no-repeat;
+    -webkit-background-size: 20px 20px;
+    background-size: 20px 20px;
+    float: right;
+    vertical-align: middle;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    width: 20px;
+    height: 20px;
+    margin: 4px 4px 0;
+    display: none;
+}
+
+.book-isbn-metabox {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.book-isbn-metabox input {
+    flex: 0 1 auto;
+    margin: 0 5px 0 0;
+}
+
+.book-isbn-metabox-error {
+    background: #F44336;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    display: none;
+}
+
+.book-isbn-metabox-error p {
+    padding: 3px;
+}
+
+.book-general-info-metaboxes input {
+    width: 100%;
+}
+
+.book-general-metabox-1,
+.book-general-metabox-2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 0 1em 0;
+}
+
+.book-general-metabox-1 label {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.book-general-metabox-1 .book-title,
+.book-general-metabox-1 .illustrator-info,
+.book-general-metabox-1 .publication-date,
+.book-general-metabox-1 .publication-format,
+.book-general-metabox-1 .publication-edition,
+.book-general-metabox-1 .publication-page-count,
+.book-general-metabox-1 .publication-series-number {
+    display: inline-block;
+    position: relative;
+    margin: 1em 5px 0 0;
+}
+
+.book-general-metabox-1 .book-title {
+    flex: 1 1 30%;
+}
+
+.book-general-metabox-1 .illustrator-info,
+.book-general-metabox-1 .publication-date,
+.book-general-metabox-1 .publication-format,
+.book-general-metabox-1 .publication-edition {
+    flex: 1 1 14%;
+}
+
+.book-general-metabox-1 .publication-page-count,
+.book-general-metabox-1 .publication-series-number {
+    flex: 0 1 9%;
+}
+
+.book-general-metabox-1 .publication-gr-id,
+.book-general-metabox-1 .publication-isbn13,
+.book-general-metabox-1 .publication-asin,
+.book-general-metabox-1 .publication-gr-url,
+.book-general-metabox-1 .publication-gr-review {
+    display: inline-block;
+    position: relative;
+    margin: 1em 5px 0 0;
+}
+
+.book-general-metabox-1 .publication-gr-id,
+.book-general-metabox-1 .publication-isbn13,
+.book-general-metabox-1 .publication-asin {
+    flex: 1 1 15%;
+}
+
+.book-general-metabox-1 .publication-gr-review {
+    flex: 1 1 9%;
+}
+
+.book-general-metabox-1 .publication-gr-url {
+    flex: 1 1 39%;
+}
+
+.review-score-metabox-container {
+    display: flex;
+}
+
+.book-general-metabox-2 {
+    background: #f7f7f7;
+    padding: 5px 10px 0 10px;
+}
+
+.book-general-metabox-2 .metabox {
+    display: inline-block;
+    position: relative;
+    margin: 0 5px 1em 0;
+    width: 24%;
+}
+
+.review-score-rating-enable,
+.review-score-rating-type,
+.review-score-rating-position {
+    margin: 0 0 15px 0;
+}
+
+.review-score-rating-type label,
+.review-score-rating-position label,
+.review-score-rating-enable label {
+    display: block;
+    margin: 0 0 7px;
+    font-weight: 700;
+}
+
+#rcno_book_review_rating_metabox .inside {
+    min-height: 25px;
+    margin: 1em 0 0 0;
+}
+
+#rcno_book_review_rating_metabox .rcno-rate {
+    height: 25px;
+    padding: 0 10px;
+    float: left;
+}
+
+#rcno_book_review_rating_metabox .rcno-rate:not(:checked) > input {
+    position: absolute;
+    top: -9999px;
+}
+
+#rcno_book_review_rating_metabox .rcno-rate:not(:checked) > label {
+    float: right;
+    width: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 30px;
+    color: #ccc;
+    height: 25px;
+}
+
+#rcno_book_review_rating_metabox .rcno-rate:not(:checked) > label:before {
+    content: '★ ';
+}
+
+tr.rcno_review_template > td {
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 0;
+}
+
+tr.rcno_review_template > td .template-options img.template-label-image.checked {
+    border: 5px solid rgba(30, 140, 190, .8);
+    box-sizing: border-box;
+}
+
+tr.rcno_review_template > td .template-options .label-container p {
+    line-height: 1;
+}
+
+tr.rcno_review_template > td .template-options {
+    margin: 0 1em 1em;
+    position: relative;
+}
+
+tr.rcno_review_template > td input[type=radio] {
+    display: none;
+}
+
+.rcno_review_template img.template-label-image {
+    width: 150px;
+    height: 255px;
+}
+
+tr.rcno_review_slug_instructions {
+    font-size: 12px !important;
+}
+
+tr.rcno_review_slug_instructions > td {
+    padding: 0 10px;
+}
+
+tr.rcno_review_slug_instructions > td > p,
+tr.rcno_review_slug_instructions > th {
+    font-size: 13px !important;
+}
+
+.label-container {
+    height: 255px;
+    overflow: hidden;
+    position: relative;
+}
+
+.label-container:hover .template-label-info {
+    transform: translateY(-62px);
+}
+
+.template-label-info {
+    position: absolute;
+    width: 100%;
+    bottom: -25px;
+    height: 30px;
+    transition: cubic-bezier(0.55, 0.06, 0.68, 0.19) 0.2s;
+}
+
+.template-label-p {
+    background: rgba(30, 140, 190, .8);
+    padding: 5px 10px;
+    color: #fff;
+    margin: 0;
+}
+
+#general_tab h2.hndle,
+#taxonomy_tab h2.hndle,
+#components_tab h2.hndle,
+#extras_tab h2.hndle,
+#templates_tab h2.hndle,
+#advanced_tab h2.hndle{
+    display: none;
+}
+
+#general_tab th,
+#taxonomy_tab th,
+#extras_tab th,
+#templates_tab th,
+#advanced_tab th,
+#components_tab th {
+    padding-left: 15px;
+}
+
+td hr {
+    display: none;
+}
+
+tr.rcno-table-header th {
+    background: #efefef;
+    border: 1px solid #efefef;
+    text-align: center;
+    font-size: 16px;
+}
+
+tr.rcno-table-header td {
+    border-bottom: 2px solid #efefef;
+}
+
+.column-book_cover {
+    width: 50px;
+}
+
+.book-general-metabox-1 .publication-gr-url {
+    /* display: none; */
+}
+
+.rcno.inline-row {
+    display: flex;
+}
+
+.rcno.inline-inputs {
+    flex: 0 0 30%;
+    margin: 0 2em 0 0;
+}
+
+.rcno.text-25 {
+    width: 100%;
+}
+
+#tab-panel-rcno_reviews_shortcodes_help p {
+    margin: 0;
+}
+
+.jq-stars {
+    display: inline-block;
+}
+
+.jq-rating-label {
+    font-size: 22px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    font-family: Helvetica, arial, verdana, sans-serif;
+}
+
+.jq-star {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+
+.jq-star-svg {
+    padding-left: 3px;
+    width: 100%;
+    height: 100% ;
+}
+
+.jq-star:hover .fs-star-svg path {
+}
+
+.jq-star-svg path {
+    /* stroke: #000; */
+    stroke-linejoin: round;
+}
+
+table.wp-list-table .row-actions {
+    color: #565656;
+}
+
+.settings-form .selectize-control {
+    width: 100%;
+}
+
+.form-table .selectize-control {
+    width: 65%;
+}

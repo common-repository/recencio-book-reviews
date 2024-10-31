@@ -1,0 +1,313 @@
+/*
+*   I am being super specific with some CSS selectors
+*   to main consistent style among many WP themes.
+*/
+
+.rcno-full-book-description::-webkit-scrollbar {
+    width: .5em;
+}
+
+.rcno-full-book-description::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.rcno-full-book-description::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+#rcno-review-score-box {
+    padding: 10px;
+    margin: 0 0 2em;
+}
+
+#rcno-review-score-box ul {
+    list-style: none;
+    clear: left;
+    margin: 0;
+    padding: 0;
+}
+
+#rcno-review-score-box .review-summary {
+    margin: 0 0 1em 0;
+}
+
+#rcno-review-score-box .review-summary:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#rcno-review-score-box ul li .rcno-review-score-bar-container {
+    height: 40px;
+    background: #ccc;
+    overflow: hidden;
+    margin: 0 0 1em 0;
+    position: relative;
+}
+
+#rcno-review-score-box ul li .review-score-bar {
+    background: transparent;
+}
+
+#rcno-review-score-box ul li .review-score-bar span.score-bar {
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 40px;
+    padding: 0 0 0 10px;
+    text-transform: uppercase;
+}
+
+#rcno-review-score-box ul li .rcno-review-score-bar-container span.right {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    z-index: 9999;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+#rcno-review-score-box .overall-score span.badge-star {
+    font-size: 21px;
+}
+
+#rcno-review-score-box .review-summary .overall-score {
+    width: 120px;
+    height: 120px;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    float: left;
+}
+
+#rcno-review-score-box .review-summary .review-text {
+    width: calc(100% - 130px);
+    display: inline-block;
+    max-height: 120px;
+    margin: 0 0 0 10px;
+    float: left;
+}
+
+#rcno-review-score-box .review-summary .review-text h2 {
+    margin: 0 0 10px 0;
+    font-weight: 600;
+    line-height: 1;
+}
+
+#rcno-review-score-box .review-summary .review-text p {
+    margin: 0;
+    font-size: .9em;
+    line-height: 1.2;
+    height: 6em;
+    overflow: hidden;
+}
+
+#rcno-review-score-box .review-summary .overall-score .overall {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    display: block;
+    line-height: 1;
+    padding: 10px;
+}
+
+#rcno-review-score-box .review-summary .overall-score .overall-text {
+    color: #fff;
+    font-size: 13px;
+    display: block;
+    line-height: 1;
+    bottom: 0;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 10px 7px;
+    background: black;
+    left: 0;
+}
+
+#rcno-review-score-box .review-summary .overall-text {
+    padding: 5px;
+    display: inline-block;
+}
+
+.rcno-review-badge {
+    width: 100px;
+    height: 100px;
+    background: #008000;
+    margin: 1em 0;
+    display: inline-block;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.rcno-full-book {
+    margin: 1em 0;
+}
+
+.rcno-full-book:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.rcno-full-book .rcno-full-book-cover img.rcno-book-cover,
+.review-content .book-cover-container .book-cover img.rcno-book-cover {
+    width: 100%;
+    /* Twenty Ten does not do this for some strange reason */
+    height: auto;
+    display: block;
+}
+
+.rcno-full-book-cover {
+    width: 200px;
+    background: rgba(96, 125, 139, 0.36);
+    display: inline-block;
+    float: left;
+    margin: 0 10px 0 0;
+    position: relative;
+}
+
+.rcno-full-book-cover .rcno-admin-rating .jq-star {
+    height: 35px;
+    width: 25px;
+    margin: 0 5px 0 0;
+}
+
+.rcno-full-book-details .rcno-full-book-cover img {
+    max-width: 200px;
+}
+
+.rcno-full-book-details {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 1em 0;
+    width: calc(100% - 215px);
+    display: inline-block;
+}
+
+.rcno-full-book-description {
+    font-size: 13px;
+    line-height: 1.6;
+    width: calc(100% - 215px);
+    display: inline-block;
+    height: 14.4em;
+    overflow: auto;
+}
+
+.rcno-admin-rating span {
+    position: relative;
+    font-size: 35px;
+}
+
+.rcno-full-book-cover .rcno-admin-rating {
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    position: absolute;
+    bottom: 0;
+}
+
+.review-content .book-cover-container {
+    position: relative;
+    width: 45%;
+    float: left;
+    margin: 0 15px 0 0;
+    overflow: hidden;
+}
+
+.review-content .book-cover-container .book-cover {
+    position: relative;
+}
+
+.review-content .book-cover-container .book-cover .rcno-admin-rating {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.review-content .book-cover-container .book-info {
+    position: absolute;
+    background: rgba(86, 160, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0 5px;
+    text-align: center;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+}
+
+.review-content .book-cover-container .book-info h2 {
+    color: #fff !important;
+    margin: 2em 0 10px 0 !important;
+}
+
+.review-content .book-cover-container:hover .book-info {
+    transform: translateY(-100%);
+}
+
+.review-content .book-cover-container .book-info p,
+.review-content .book-cover-container .book-info a {
+    color: #fff;
+    margin: 0 !important;
+    text-decoration: none !important;
+    box-shadow: none !important;
+}
+
+ul.rcno-alphabet-navigation {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+ul.rcno-alphabet-navigation li {
+    flex: 0 1 20px;
+}
+
+ul.rcno-taxlist li {
+    margin: 0 0 0 20px;
+}
+
+.rcno-purchase-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0 0 1em 0;
+}
+
+.rcno-purchase-links-container .rcno-purchase-links {
+    text-align: center;
+    font-size: .8em;
+    margin: 3px;
+}
+
+.rcno-purchase-links-container a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 7px;
+}
+
+.rcno-purchase-links-container .rcno-purchase-links:hover {
+    color: #fff;
+    background: #fd9025 !important;
+}
+
+@media (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .rcno-full-book-description {
+        width: 100%;
+    }
+
+    .rcno-full-book-cover {
+        width: 100%;
+        margin: 0 0 1em 0;
+    }
+
+}
